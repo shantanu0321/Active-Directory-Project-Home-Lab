@@ -19,3 +19,18 @@ https://github.com/user-attachments/assets/be0c2d59-2453-4325-bc4f-73a64eddb128
 
 https://github.com/user-attachments/assets/4cc59460-0755-49d2-9e5c-773cebffe54f
 
+## 4. Rename the Windows Server 
+
+- Open the start menu and search "This PC" and right click on it and click on "Properties" and select the click on "Rename this PC" and
+  change the name to ADDC01 and restart the PC.
+
+https://github.com/user-attachments/assets/7c366fcf-fe3c-4f60-8606-50f21649816e
+
+## 5. Configure the IP Address of the Windows Server
+
+- 
+
+
+
+  
+
