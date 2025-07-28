@@ -71,6 +71,10 @@ network:
 
 <img width="921" height="593" alt="2" src="https://github.com/user-attachments/assets/1c7d8333-c5c5-44ed-9c99-feac85de94ea" />
 
+The red part is created when we presss space bar on the keyboard.
+
+
+
 
 - Save the setting by pressing `Left Control + O` and exit the file by pressing `Control + x`.
   
