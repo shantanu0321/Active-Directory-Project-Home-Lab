@@ -40,7 +40,14 @@ https://github.com/user-attachments/assets/146dd4f4-6ca4-42d2-89bc-59b9ff70e9b0
 
 ---
 
-## 4. Setup the Ubuntu IP address
+## 4. NAT Network Setup
+
+- Watch the video for better understanding.
+
+https://github.com/user-attachments/assets/665b8a5a-010c-4aee-9909-a58622599305
+
+    
+## 5. Setup the Ubuntu IP address
 
 - Start the Virtual Machine and login in the server using the "**Username**" and "**Password**" you have given while installation.
   
@@ -75,7 +82,6 @@ The red part is created when we presss space bar on the keyboard.
 
 
 
-
 - Save the setting by pressing `Left Control + O` and exit the file by pressing `Control + x`.
   
 - Type the command `sudo netplan apply` and press enter it will show some warning sign but press enter.
@@ -83,4 +89,6 @@ The red part is created when we presss space bar on the keyboard.
 - Type command `ip a` it will show your changed IP address.
 
   <img width="1109" height="578" alt="ip a" src="https://github.com/user-attachments/assets/c06a8510-89f4-4025-a08f-e282848977c7" />
+
+  
   
