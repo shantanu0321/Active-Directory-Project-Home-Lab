@@ -46,7 +46,7 @@ https://github.com/user-attachments/assets/550ece1b-a54c-4c53-af9b-17848177ed29
 ## 6. Install Splunk Forwarder 
 
 - Open the web browser and search `Splunk` and open the official website https://www.splunk.com/en_us/download/universal-forwarder.html
- and do the Sign Up and then Login on the website.
+and then Login on the website with the credentials you used to install it on Ubuntu Server.
 
 - After loging in, click on the `Platform` and then click on the `Free Trials and Download`.
   
