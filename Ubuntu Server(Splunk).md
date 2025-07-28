@@ -1,5 +1,6 @@
 # Ubuntu Server Installation
 
+
 ## 1. Downloading Ubuntu Server
 
 - Open google chrome and search " **Ubuntu** " and click on official website:  https://ubuntu.com/
@@ -81,7 +82,6 @@ network:
 The red part is created when we presss space bar on the keyboard.
 
 
-
 - Save the setting by pressing `Left Control + O` and exit the file by pressing `Control + x`.
   
 - Type the command `sudo netplan apply` and press enter it will show some warning sign but press enter.
@@ -90,5 +90,24 @@ The red part is created when we presss space bar on the keyboard.
 
   <img width="1109" height="578" alt="ip a" src="https://github.com/user-attachments/assets/c06a8510-89f4-4025-a08f-e282848977c7" />
 
+---
   
+## 6. Splunk Download
+
+- In the host window open the chrome browser and search splunk and go to the official website : https://www.splunk.com/
   
+- In the website do "sign up" and "login in" in the splunk then go to the "**Platform**" and right click on the "**Free Trials & Downloads**"
+
+- Find Splunk Enterprise and right click on "**Get My Free Trial**"
+
+- Now choose your installation package to `Linux`  and download the `.deb` version.
+
+- Read the document and check the box of aggrement and access the program and your download will start automatically.
+
+https://github.com/user-attachments/assets/4956448a-7569-4e6f-94b8-8e4fec0a0df3
+
+---
+
+## 7. Splunk setup in the Ubuntu server
+
+- Start the virtual machine and 
