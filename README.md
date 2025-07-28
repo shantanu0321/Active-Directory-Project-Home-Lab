@@ -6,7 +6,7 @@
 - **Target:** Windows 10 (domain-joined)
 - **Attacker:** Kali Linux
 
-  ## Setup Steps
+## Setup Steps
 1. Deploy Windows Server, promote to Domain Controller.
 2. Join Windows 10 to the domain.
 3. Install Splunk on Ubuntu, configure log forwarding.
