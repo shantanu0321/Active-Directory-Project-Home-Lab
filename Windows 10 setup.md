@@ -53,7 +53,8 @@ https://github.com/user-attachments/assets/550a2142-379c-450c-be59-6ccc119396cf
 
 - Now scroll down and click on the "**Rename PC**" and write the new name as "**Target Pc**" and save it and restart the PC.
 
-https://github.com/user-attachments/assets/65dc9774-00f4-4b96-9899-347465d91cc2
+https://github.com/user-attachments/assets/72ded7e2-b6f4-4f7a-8295-24c07e91e575
+
 
 ---
 
@@ -67,4 +68,96 @@ https://github.com/user-attachments/assets/65dc9774-00f4-4b96-9899-347465d91cc2
 > Subnet Mask - 255.255.255.0, 
 > Default Gateway - 192.168.10.1, 
 > Prefered DNS Server - 8.8.8.8
+
+https://github.com/user-attachments/assets/12bb66a9-a96c-4634-bab9-4534e789d7b4
+
+
+---
+
+ ## 6. Splunk Forwader Download 
+
+ - Open web browser and search **Splunk** and click on official website: https://www.splunk.com/
  
+ - Do **Sign Up** and then **Login** in the website
+ 
+ - Click on the **Platform** and then click on the **Free Trials & Download**
+
+ - Find **Slpunk Forwarder** and click on **Get My Free Download**
+
+ - Download the windows file compatible to your Pc.
+
+https://github.com/user-attachments/assets/e78e21ec-b6b4-4d63-adcc-dd94c7311d6f
+
+
+---
+
+## 7. Splunk Forwarder Install 
+
+- Start the Virtual Machine and open **File Explorer** and go to folder where you download the Splunk Forwarder
+
+- Open the setup file.
+  
+- Check the box of liscense aggrement and click on the `next` option.
+  
+- Create the username - `admin` and check the box of "Generate the Password
+  
+- Leave the "Deployment Server" as blank.
+  
+- Set the "Receiving the Indexer" IP Address - `192.168.10.10` and set the host to `9997` and click on `next`.
+  
+- Click on install and your installation process will start.
+
+
+https://github.com/user-attachments/assets/1b89685f-5139-4c1e-ae7f-5d76fd4cb4fd
+
+
+---
+
+## 8. Splunk Input Configuration
+
+- Open the `Splunk Universal Forwader` folder in `Program File` in `Local Disck:C`
+  
+- Open the `etc` folder and in that open `system` folder and in that open `local ` folder.
+  
+- open the `start menu` and search `Notepad` and run it as `Administrator`.
+  
+- Paste this text in the notepad"
+
+```
+[WinEventLog://Application]
+
+index = endpoint
+
+disabled = false
+
+[WinEventLog://Security]
+
+index = endpoint
+
+disabled = false
+
+[WinEventLog://System]
+
+index = endpoint
+
+disabled = false
+
+[WinEventLog://Microsoft-Windows-Sysmon/Operational]
+
+index = endpoint
+
+disabled = false
+
+renderXml = true
+
+source = XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
+
+```
+
+- Save this note pad in the the " Localdisk:C/Program File/Splunk Universal Forwarder/etc/system/local " and save it as inputs.conf in all file format, you can watch it in the below video
+
+https://github.com/user-attachments/assets/1e4bc0c4-bf75-47e9-8fe0-b4be1c8b30f3
+
+---
+
+## 9. 
