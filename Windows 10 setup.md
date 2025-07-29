@@ -54,5 +54,4 @@ https://github.com/user-attachments/assets/550a2142-379c-450c-be59-6ccc119396cf
 - Now scroll down and click on the "**Rename PC**" and write the new name as "**Target Pc**" and save it and restart the PC.
 
 
-
   
