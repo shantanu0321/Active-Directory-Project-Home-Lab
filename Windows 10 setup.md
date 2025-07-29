@@ -53,5 +53,18 @@ https://github.com/user-attachments/assets/550a2142-379c-450c-be59-6ccc119396cf
 
 - Now scroll down and click on the "**Rename PC**" and write the new name as "**Target Pc**" and save it and restart the PC.
 
+https://github.com/user-attachments/assets/65dc9774-00f4-4b96-9899-347465d91cc2
 
-  
+---
+
+## 5. Change the IP of the Windows 10
+
+- Click on the **Ethertnet** icon on the taskbar and then click on **Network & Internet Settings**
+
+- Click on **Change adapter options** and click on the **Ethernet** and click on the **Properties** and double click on the "**Internet Protocol Version 4 (TCP/IPv4) and click on use the following and write the following:
+
+> IP Address- 192.168.10.100, 
+> Subnet Mask - 255.255.255.0, 
+> Default Gateway - 192.168.10.1, 
+> Prefered DNS Server - 8.8.8.8
+ 
