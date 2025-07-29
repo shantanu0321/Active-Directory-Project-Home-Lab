@@ -54,11 +54,16 @@ https://github.com/user-attachments/assets/665b8a5a-010c-4aee-9909-a58622599305
   
 - Get the `root` permission of the Virtual machine using command `sudo su` and then change the directory using the command `cd /etc/netplan`
 
-<img width="1108" height="568" alt="root " src="https://github.com/user-attachments/assets/fa442d33-d707-4b5b-af76-5aa87f3f9d1a" />
+
+
+
+
 
 - Type command `nano` and press Left Control + Tab on keyboard and it will appear `50-colud-init.yaml` and press enter.
  
-<img width="1095" height="584" alt="nano " src="https://github.com/user-attachments/assets/ea3266b4-5284-4c56-8f3c-5741d39bc913" />
+
+
+
 
 
 - Change the setting in that file according to this :
@@ -77,7 +82,7 @@ network:
             via: 192.168.10.1
 ```
 
-<img width="921" height="593" alt="2" src="https://github.com/user-attachments/assets/1c7d8333-c5c5-44ed-9c99-feac85de94ea" />
+
 
 The red part is created when we presss space bar on the keyboard.
 
@@ -88,7 +93,7 @@ The red part is created when we presss space bar on the keyboard.
 
 - Type command `ip a` it will show your changed IP address.
 
-  <img width="1109" height="578" alt="ip a" src="https://github.com/user-attachments/assets/c06a8510-89f4-4025-a08f-e282848977c7" />
+
 
 ---
   
@@ -110,4 +115,13 @@ https://github.com/user-attachments/assets/4956448a-7569-4e6f-94b8-8e4fec0a0df3
 
 ## 7. Splunk setup in the Ubuntu server
 
-- Start the virtual machine and 
+- Start the virtual machine and login in the machine.
+  
+- Type command `sudo apt-get install virtualbox-guest-addititons-iso -y` and press enter and reboot the virtual machine.
+
+- Start the virtual machine and type command `sudo apt-get install virtualbox-guest-utils -y` and press enter and
+  reboot the virtual machine.
+
+- Start the virtual machine and type command `sudo adduser "**mydfir**" vboxsf.
+
+- 
