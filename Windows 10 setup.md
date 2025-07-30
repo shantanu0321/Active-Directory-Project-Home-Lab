@@ -58,7 +58,31 @@ https://github.com/user-attachments/assets/72ded7e2-b6f4-4f7a-8295-24c07e91e575
 
 ---
 
-## 5. Change the IP of the Windows 10
+## 5. Sysmon Download & Install
+
+- Open web browser and search "**sysmon windows server**" an click on the microsoft official link: https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon
+
+- Click on **Download Sysmon** and your download will start automatically.
+
+- Open new tab in the browser and search "**Sysmon olaf config**" click on the website: https://github.com/olafhartong/sysmon-modular/blob/master/sysmonconfig.xml and then click on `Raw` option and save it on the same folder where you extract
+  the sysmon with the name  **sysmonconfig**.
+
+- Extract the **Sysmon** downloaded file.
+
+- Save the `sysmonconfig.xml` file in the folder where you extracted the **Sysmon**.
+
+
+https://github.com/user-attachments/assets/e2c7f74e-310f-4589-b9fe-9234fef65df8
+
+
+- Open the Command Prompt in **Administrator** mode and type `cd` and location of file where you extract the file and press enter.
+
+- Type the command `.\Sysmon64.exe -i .\sysmonconfig.xml` and it will be installed.
+
+https://github.com/user-attachments/assets/175c8a62-a333-4d3e-87ce-3887be8f1fef
+
+
+## 6. Change the IP of the Windows 10
 
 - Click on the **Ethertnet** icon on the taskbar and then click on **Network & Internet Settings**
 
@@ -74,7 +98,7 @@ https://github.com/user-attachments/assets/12bb66a9-a96c-4634-bab9-4534e789d7b4
 
 ---
 
- ## 6. Splunk Forwader Download 
+ ## 7. Splunk Forwader Download 
 
  - Open web browser and search **Splunk** and click on official website: https://www.splunk.com/
  
@@ -91,7 +115,7 @@ https://github.com/user-attachments/assets/e78e21ec-b6b4-4d63-adcc-dd94c7311d6f
 
 ---
 
-## 7. Splunk Forwarder Install 
+## 8. Splunk Forwarder Install 
 
 - Start the Virtual Machine and open **File Explorer** and go to folder where you download the Splunk Forwarder
 
@@ -113,7 +137,7 @@ https://github.com/user-attachments/assets/1b89685f-5139-4c1e-ae7f-5d76fd4cb4fd
 
 ---
 
-## 8. Splunk Input Configuration
+## 9. Splunk Input Configuration
 
 - Open the `Splunk Universal Forwader` folder in `Program File` in `Local Disck:C`
   
@@ -160,4 +184,4 @@ https://github.com/user-attachments/assets/1e4bc0c4-bf75-47e9-8fe0-b4be1c8b30f3
 
 ---
 
-## 9. 
+ 
