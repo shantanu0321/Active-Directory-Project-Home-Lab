@@ -116,12 +116,66 @@ https://github.com/user-attachments/assets/4956448a-7569-4e6f-94b8-8e4fec0a0df3
 ## 7. Splunk setup in the Ubuntu server
 
 - Start the virtual machine and login in the machine.
+
+- Type command `sudo apt-get install virtualbox`.
   
-- Type command `sudo apt-get install virtualbox-guest-addititons-iso -y` and press enter and reboot the virtual machine.
+- Type command `sudo apt-get install virtualbox-guest-addititons-iso -y` and press enter and type `sudo reboot` and reboot the virtual machine.
 
-- Start the virtual machine and type command `sudo apt-get install virtualbox-guest-utils -y` and press enter and
-  reboot the virtual machine.
+- Start the virtual machine and type command `sudo apt-get install virtualbox-guest-utils -y` and press enter and type `sudo
+  reboot` ane reboot the virtual machine.
 
-- Start the virtual machine and type command `sudo adduser "**mydfir**" vboxsf.
+https://github.com/user-attachments/assets/b7131ff4-82b0-48b2-9363-5f56442d8ce7
 
-- 
+
+- Go to the `Devices` on the top of the virtual machine and click on `shared folder` then go to `share folder settings` and add the         **folder where you downloaded the Ubuntu Server** and give the name to it and tick all the 3 options:
+  
+  > Read-only  ✔
+  > Auto-Mount ✔
+  > Make Permanent ✔
+  
+https://github.com/user-attachments/assets/229278a7-c036-45c7-96f0-56fb79898423
+
+
+- Start the virtual machine and type command `sudo adduser "**mydfir**" vboxsf`  prerss enter.
+
+https://github.com/user-attachments/assets/a29ad5d1-4553-448e-8343-474b06dc0e46
+
+
+- Type command `mkdir share` and press enter.
+
+- Type command `sudo mount -t vboxsf -o uid=1000,gid=1000 UbuntuServer (**Folder name you saved on the share folder settings**) share /` and press enter.
+
+- Type command `cd share`  press enter.
+
+- Type command `sudo dpkg -i (deb. server name)`(it can be done by pressing left control + tab) press enter.
+
+- Type command `cd /opt/splunk` press enter.
+
+- Type command `sudo -u splunk bash` press enter.
+
+- Type command `cd bin` press enter.
+
+- Type command `./splunk start` and it will ask you to set `administrator username` and `password` for the login of splunk server.
+
+https://github.com/user-attachments/assets/a54500a9-ce90-4a55-8bfa-913945808b04
+
+
+- To check your server is working or not, just open the Windows 10 or Windows Server anyone
+ 
+- Open web browser in it and search the IP address of your ubuntu machine `192.168.10.10:8000` and the end result of this will show splunk login interface.
+
+- Login in the website with the administrator username and password you have given.
+
+https://github.com/user-attachments/assets/360d75d3-fc25-4154-a32b-74e5d2a3cdf0
+
+
+- Every time you want to start the server you start the machine and type command:
+
+   ```
+   cd share
+   cd /opt/splunk/
+   sudo -u splunk bash
+   cd bin
+   ./splunk start
+   ```
+   These command will start the splunk server, but you have to enter it every time.
