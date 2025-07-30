@@ -12,8 +12,8 @@
 3. Install Splunk on Ubuntu, configure log forwarding.
 4. Use Kali Linux for attack simulations.
 
-## Key Demonstrations
+## Objectives of the projects 
 - User/group management via AD
-- GPO creation & enforcement
 - Log collection & monitoring with Splunk
-- Detection of attacks (e.g., password spray, brute force)
+- Detection of attacks (e.g.brute force)
+- Run Atomic Test
