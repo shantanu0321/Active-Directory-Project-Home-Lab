@@ -8,17 +8,23 @@
   
 https://github.com/user-attachments/assets/6155bab4-570b-4fa6-a4fc-2ce3a4a2259a
 
+---
+
 ## 2. Create a new VM in the VirtualBox
 
 - Open the Virtualbox and click on New, then write the name of the new machine and make the settings according to the system as shown in the video.
 
 https://github.com/user-attachments/assets/be0c2d59-2453-4325-bc4f-73a64eddb128
 
+---
+
 ## 3. Setup the Windows Server
 
 - Start the machine and install the Windows Server 2022 Standard Evaluation(Desktop Experience) and then Setup your username and password as shown in the video.
 
 https://github.com/user-attachments/assets/4cc59460-0755-49d2-9e5c-773cebffe54f
+
+---
 
 ## 4. Rename the Windows Server 
 
@@ -27,7 +33,45 @@ https://github.com/user-attachments/assets/4cc59460-0755-49d2-9e5c-773cebffe54f
 
 https://github.com/user-attachments/assets/7c366fcf-fe3c-4f60-8606-50f21649816e
 
-## 5. Configure the IP Address of the Windows Server according to the NAT Network.
+---
+
+## 5. NAT Network Setup
+
+- Open VirtualBox and select the Window Server (Virtual Machine) and click on setting.
+
+- Click on the Network and change **Attached to:** to NAT Network and it will be set to the network **AD Project**
+  and click on **OK**.
+
+https://github.com/user-attachments/assets/149cfe08-1eb0-452a-aaa8-580f90a9f000
+
+---
+
+## 6. Sysmon Download & Install
+
+- Open web browser and search "**sysmon windows server**" an click on the microsoft official link: https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon
+
+- Click on **Download Sysmon** and your download will start automatically.
+
+- Open new tab in the browser and search "**Sysmon olaf config**" click on the website: https://github.com/olafhartong/sysmon-modular/blob/master/sysmonconfig.xml and then click on `Raw` option and save it on the PC as **sysmonconfig**.
+
+- Extract the **Sysmon** downloaded file.
+
+- Save the `sysmonconfig.xml` file in the folder where you extracted the **Sysmon**.
+
+   
+https://github.com/user-attachments/assets/9850bbba-18ef-4103-85ca-9f1254c7cc6f
+
+
+- Open the Command Prompt in **Administrator** mode and type `cd` and location of file where you extract the file and press enter.
+
+- Type the command `.\Sysmon64.exe -i .\sysmonconfig.xml` and it will be installed.
+
+
+https://github.com/user-attachments/assets/65096418-a72c-4f63-9a93-c4312d0bc82e
+
+---
+    
+## 7. Configure the IP Address of the Windows Server according to the NAT Network.
 
 - Click on the Ethernet icon in the taskbar and click on the `Network & Internet Settings`.
 
@@ -42,8 +86,9 @@ https://github.com/user-attachments/assets/7c366fcf-fe3c-4f60-8606-50f21649816e
 
 https://github.com/user-attachments/assets/550ece1b-a54c-4c53-af9b-17848177ed29
 
+---
 
-## 6. Install Splunk Forwarder 
+## 8. Install Splunk Forwarder 
 
 - Open the web browser and search `Splunk` and open the official website https://www.splunk.com/en_us/download/universal-forwarder.html
 and then Login on the website with the credentials you used to install it on Ubuntu Server.
@@ -52,10 +97,11 @@ and then Login on the website with the credentials you used to install it on Ubu
   
 - Now download it according to your computer compatibility (64 bit or 32 bit) for Windows.
 
-
 https://github.com/user-attachments/assets/f29a18fc-f3b6-442f-9125-da43b5d120fa
 
-## 7. Install the Splunk in the Windows Server
+---
+
+## 9. Install the Splunk in the Windows Server
 
 - Open the setup file.
 - Check the box of liscense aggrement and click on the `next` option.
@@ -66,7 +112,9 @@ https://github.com/user-attachments/assets/f29a18fc-f3b6-442f-9125-da43b5d120fa
   
 https://github.com/user-attachments/assets/22c71593-83ba-44ac-b5b0-193db7b86eb9
 
-## 8. Configure the Splunk 
+---
+
+## 10. Configure the Splunk 
 
 - Open the `Splunk Universal Forwader` folder in `Program File` in `Local Disck:C`
 - Open the `etc` folder and in that open `system` folder and in that open `local ` folder.
