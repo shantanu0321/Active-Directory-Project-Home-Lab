@@ -105,7 +105,7 @@ https://github.com/user-attachments/assets/f29a18fc-f3b6-442f-9125-da43b5d120fa
 
 - Open the setup file.
 - Check the box of liscense aggrement and click on the `next` option.
-- Create the username - `admin(AD)` and check the box of "Generate the Password"
+- Create the username - `admin` and check the box of "Generate the Password"
 - Leave the "Deployment Server" as blank.
 - Set the "Receiving the Indexer" IP Address - `192.168.10.10` and set the host to `9997` and click on `next`.
 - Click on install and your installation process will start.   
