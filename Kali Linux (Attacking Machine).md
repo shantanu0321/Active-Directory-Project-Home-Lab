@@ -1,9 +1,14 @@
 # Kali Linux
 
+
 ## 1. NAT Network Setup 
 
-- Open Virtual Box and select the Kali Linux (Virtual Machine) and open **Settings**.
-- On the setting interface go to the "**Network**" and change preferred network to NAT-Network and it will be connected by the network  
+- Connect the Virtual Machine to the NAT Network to work in the safe environment.
+
+https://github.com/user-attachments/assets/67a252dd-0141-466f-a16a-fb61e4151aa8
+
+---
+
 
 ## 2. Linux IP Setup 
 
@@ -26,6 +31,13 @@
 ```
  save this setting.
 
-- Go to Home Screen of the Kali Linux and right click on the **Internet** icon and click on **Disconnect** it will stop internet access on the Machine.
-- Once again on the Home screen click  right click on the **Internet** icon and click on **Connection** that is avaialble fot the PC it will start the internet access on the Machine.
-- Now open the Terminal in the Linux and enter the command **`ip a`** it will show you the new IP Address you have entered
+- Go to Home Screen of the Kali Linux and right click on the **Internet** icon and click on **Disconnect**
+   it will stop internet access on the Machine.
+  
+- Once again on the Home screen click  right click on the **Internet** icon and click on **Connection**
+  that is avaialble fot the PC it will start the internet access on the Machine.
+
+- Now open the Terminal in the Linux and enter the command **`ip a`** it will show you the new IP Address you have entered.
+- Now to check the that you are connected to the internet type command `ping 8.8.8.8` it will if everthing is correct then
+   there will be no packet loss and all packets will be sent and received .
+   
