@@ -51,11 +51,22 @@ https://github.com/user-attachments/assets/3a4ed9d7-eeed-4588-94ed-6f04d977f4e7
 - On the Advance system settings interface go to "**Computer Name**" and click on "**Change**".
 - Now Change "**Member of**" from Workgroup to  Domain `MDFIR.LOCAL` as soon as you save this Windows Security will ask to
   to enter **Computer Name / Domain Change** in that enter `Administrator` and `Password that you have given for the Windows Server`
-  and save this setting. 
+  and save this setting your system will restart.
 
 https://github.com/user-attachments/assets/891a1388-ecd1-4c34-b173-98b4ce1da235
 
 
 ---  
 
-## 4.
+## 4. Loging in as Active Directory User
+
+- As soon as your Virtual Machine restart, go to "**Other Users**".
+- Now enter the username as you have created in the Active Directory Windows Server Manager and password to
+  get login in the TARGET-PC.
+
+https://github.com/user-attachments/assets/8b3abfee-7c74-4dc1-8cf6-433c79dd3e67
+
+---
+
+# Now you can use the TARGET machine as any user you have created in the Active Directory Windows Server Manager by just entring its username and password.
+
