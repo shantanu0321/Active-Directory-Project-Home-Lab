@@ -1,7 +1,7 @@
 # Kali Linux
 
 
-Note-: All the Virtual Machine: Windows 10, Windows Server, Kali Linux and must be running for the attack along with Splunk Server in the Ubuntu Server. 
+Note-: All the Virtual Machine: Windows 10, Windows Server, Kali Linux and must be running for the attack along with Splunk Server in the Ubuntu (Virtual Machine). 
 
 
 ---
