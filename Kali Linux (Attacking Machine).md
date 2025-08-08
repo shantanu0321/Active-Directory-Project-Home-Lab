@@ -129,3 +129,20 @@ https://github.com/user-attachments/assets/e2a092fc-5e40-4f08-a728-329b49eeb516
 ---
 
 
+## 5. Dictionary Attack
+
+- Open Terminal in Kali Linux and type follofwing command :
+
+  `cd Desktop/ad-project` (To go to the location of ad-project directory)
+
+  `ls` (To check the list of all the passwords.txt file )
+
+-  Now type command `hydra -l jennyj -P passwords.txt rdp://192.168.10.100 -t 1` to start the password attack
+
+  In this `hyda` is the tool used for dictionary attack and `-l` is used to input the login username and `-P` is used to input the  **"password.txt"** for the attack `rdp://192.168.10.100` is used to make **"Remote Desktop Connection"** with the given IP address 
+ `-t` yo run TASKS number `1` of connects in parallel per target
+
+- There you can see the result with login name and password for `jennyj` this is how you can use it for password cracking.
+
+- You can try other Active Directory Users for the attack as shown in the below video.
+-  
