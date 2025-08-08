@@ -1,6 +1,12 @@
 # Kali Linux
 
 
+Note-: All the Virtual Machine: Windows 10, Windows Server, Kali Linux and must be running for the attack along with Splunk Server in the Ubuntu Server. 
+
+
+---
+
+
 ## 1. NAT Network Setup 
 
 - Connect the Virtual Machine to the NAT Network to work in the safe environment.
@@ -145,5 +151,13 @@ https://github.com/user-attachments/assets/e2a092fc-5e40-4f08-a728-329b49eeb516
 - It will show the results of the attack .
 
 
+https://github.com/user-attachments/assets/cfb8a722-c421-4429-a004-153ea8bd96de
 
 
+---
+
+## 6. Splunk Attack Information
+
+- Open Windows 10 or Windows Server any of the Virtual machine and open the web browser and open splunk server by `192.168.10.10:8000`.
+
+- In splunk server go to apps and open 
