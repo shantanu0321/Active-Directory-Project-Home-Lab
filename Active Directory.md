@@ -1,98 +1,129 @@
-# Active Directory Setup
+# Active Directory Setup Guide
+
+This guide walks you through setting up Active Directory on a Windows Server virtual machine and connecting a Windows 10 target machine to the domain. Each step includes clear instructions and tips for a smooth lab experience.
 
 
-## 1. Server Manager Setup
+---
 
-- Open Windows Server (Virtual Machine) and server manager will be directly open as the VM starts.
-  
-- On the top right side of server manager dashboard click on the "**Manager**" and the click on the option "**Add roles and features**"
-  it will open a "**Add roles and features wizard**" interface.
-  
-- Click on "**Next**" on the "**Before you begin**" interface.
-  
-- On the "**Installation Type**" interface select "**Role-based or feature-based installation**" and click on "**Next**".
 
-- Click on "**Next**" on the "**Select Destination Server**" interface.
+## Prerequisites
 
-- On the "**Server roles**" interface check the box of "**Active Directory Domain Services**" and then new interface will appear and
-  click on the "**Features**" and then click on the "**Next**".
+- Two virtual machines:
+  - **Windows Server** (for Active Directory Domain Services)
+  - **Windows 10** (target machine to join the domain)
+- Both VMs must be on the same virtual network.
+- Administrative privileges on both VMs.
+- Note the IP address of your Windows Server VM.
 
-- Click on "**Next**" on the "**Features**" interface.
 
-- Click on "**Next**" on the "**AD DS**" interface.
+---
 
-- Click on "**Install**" on the "**Confirmation**" interface and the install will start automatically.
- 
+
+## 1. Setting Up Windows Server and Installing Active Directory Domain Services (AD DS)
+
+1. **Start the Windows Server VM** and log in as an administrator.
+2. **Open Server Manager** (opens automatically at startup).
+3. In the top-right, click **Manage** > **Add Roles and Features**.
+4. The "Add Roles and Features Wizard" opens.
+   - Click **Next** on the "Before You Begin" screen.
+   - Choose **Role-based or feature-based installation**, then click **Next**.
+   - Select your server from the list and click **Next**.
+   - In "Server Roles," check **Active Directory Domain Services**.
+     - When prompted, click **Add Features**.
+   - Click **Next** through the "Features" and "AD DS" pages.
+   - On the "Confirmation" page, click **Install**.
+5. Wait for the installation to complete.
+6. (Optional) Review the installation summary for errors.
+
 https://github.com/user-attachments/assets/edf7987d-f959-43bb-8da4-5e24ec6de322
 
 
 ---
 
-## 2. Domain Controller Setup
 
-- On the Windows Server interface click on the "**flag**" icon.
+## 2. Promoting the Server to a Domain Controller
 
-- Click on the "**Promote this server to Domain Controller**".
-
-- On the "**Deployment**" interface mark the option "**Add a new forest**" and give the name of new domain as `**mdfir.local**`
-  and click on "**Next**".
-
-- On the "**Domain Controller Option**" now create a "**Password**" and click on "**Next**".
-
-- Click on "**Next** on the "**DNS Option**" interface.
-
-- Enter the NetBIOS name as `**MDFIR**` on the "**Additionals Options**" interface click on "**Next**".
-
-- Click on "**Next**" on the "**Paths**" interface.
-
-- Click on "**Next**" on the "**Review Options**" interface.
-
-- Click on "**Install**" on the "**Prerequisites Check**" interface and your system will restart.
+1. In Server Manager, click the **flag** icon (notifications area).
+2. Click **Promote this server to a domain controller**.
+3. In the "Deployment Configuration" window:
+   - Select **Add a new forest**.
+   - Enter your desired root domain name, e.g., `mdfir.local`.
+   - Click **Next**.
+4. Set a **Directory Services Restore Mode (DSRM) password** and click **Next**.
+5. On the "DNS Options" page, click **Next**.
+6. On "Additional Options," confirm or edit the NetBIOS domain name (e.g., `MDFIR`) and click **Next**.
+7. Click **Next** through the "Paths" and "Review Options" screens.
+8. The system will run a prerequisites check. If all checks pass, click **Install**.
+9. The server will restart automatically after installation.
 
 https://github.com/user-attachments/assets/3a4ed9d7-eeed-4588-94ed-6f04d977f4e7
 
 
 ---
 
-## 3. Active Directory User Setup on Target Machine
 
-- Open the windows server and keep it running in the background.
+## 3. Connecting the Windows 10 Target Machine to the Domain
 
-- Now start the Windows 10 (Target Machine) and open the "**Network & Internet Settings**".
-
-- Click on the "**Change Adapter Options**".
-
-- On the "**Network Selection**" interface Right-click on the "**Ethernet**" options and click on "**Properties**".
-
-- On the "**Ethernet Options**" interface double click on the `Internet Protocol Version 4 (IPv4)`.
-
-- Now change the "**Prefered DNS server**" from `8.8.8.8` to  Windows Server (VM) IP `192.168.10.7` and save this setting.
-
-- Now open start menu search "**This PC**" and open it's "**Properties**".
-
-- Now scroll down and open "**Advanced System Settings**".
-
-- On the Advance system settings interface go to "**Computer Name**" and click on "**Change**".
-
-- Now Change "**Member of**" from Workgroup to  Domain `MDFIR.LOCAL` as soon as you save this Windows Security will ask to
-  to enter **Computer Name / Domain Change** in that enter `Administrator` and `Password that you have given for the Windows Server`
-  and save this setting your system will restart.
+1. **Start and log in to the Windows Server VM. Leave it running.**
+2. **Start the Windows 10 target VM.**
+3. Open **Network & Internet Settings**.
+   - Click **Change adapter options**.
+   - Right-click your network adapter (e.g., Ethernet) and select **Properties**.
+   - Double-click **Internet Protocol Version 4 (TCP/IPv4)**.
+   - Change the **Preferred DNS server** to the Windows Server VM’s IP address (e.g., `192.168.10.7`).
+   - Click **OK** to save.
+4. Open **This PC** > **Properties**.
+   - Scroll down and click **Advanced system settings**.
+   - In the "System Properties" window, go to the **Computer Name** tab and click **Change**.
+5. Under **Member of**, select **Domain** and enter your domain name (e.g., `MDFIR.LOCAL`).
+6. When prompted, enter credentials:
+   - **Username:** `Administrator`
+   - **Password:** (the password you set during domain controller setup)
+7. After joining the domain, restart the Windows 10 machine.
 
 https://github.com/user-attachments/assets/891a1388-ecd1-4c34-b173-98b4ce1da235
 
 
 ---  
 
-## 4. Loging in as Active Directory User
 
-- As soon as your Virtual Machine restart, go to "**Other Users**".
+## 4. Logging in as an Active Directory User
 
-- Now enter the username as you have created in the Active Directory Windows Server Manager and password to
-  get login in the TARGET-PC.
+1. After restart, on the Windows 10 login screen, select **Other user**.
+2. Enter the Active Directory username and password created in the Windows Server's Active Directory Users and Computers.
+3. Log in—the Windows 10 machine is now authenticated by Active Directory!
 
 https://github.com/user-attachments/assets/8b3abfee-7c74-4dc1-8cf6-433c79dd3e67
 
 ---
 
-# Now you can use the TARGET machine as any user you have created in the Active Directory Windows Server Manager by just entring its username and password.
+## Additional Tips & Troubleshooting
+
+- **Creating Users:**  
+  Use the **Active Directory Users and Computers** tool on the Windows Server to create and manage users.
+
+- **DNS Issues:**  
+  Ensure the target machine uses the domain controller’s IP as its DNS server. This is critical for domain discovery and joining.
+
+- **Admin Rights:**  
+  You must have local administrator rights to join a machine to the domain.
+
+- **Network Connectivity:**  
+  Both VMs must be able to communicate—verify via ping or connectivity tests.
+
+- **Resetting Passwords:**  
+  Passwords can be changed from Active Directory Users and Computers on the domain controller.
+
+---
+
+## Summary Checklist
+
+- [ ] Windows Server VM is running AD DS and promoted to domain controller.
+- [ ] Windows 10 VM is configured to use the server’s IP as DNS.
+- [ ] Windows 10 VM joined to the domain.
+- [ ] Can log in to Windows 10 as an Active Directory user.
+
+---
+
+With these steps, your lab environment is ready for further Active Directory experiments and management tasks!
 
