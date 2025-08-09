@@ -127,7 +127,7 @@ https://github.com/user-attachments/assets/e2a092fc-5e40-4f08-a728-329b49eeb516
 ---
 
 
-## 5. Dictionary Attack
+## 5. BruteForce Attack
 
 - Open Terminal in Kali Linux and type follofwing command :
 
