@@ -156,8 +156,25 @@ https://github.com/user-attachments/assets/cfb8a722-c421-4429-a004-153ea8bd96de
 
 ---
 
-## 6. Splunk Attack Information
+## 6. Network Attack Information
 
 - Open Windows 10 or Windows Server any of the Virtual machine and open the web browser and open splunk server by `192.168.10.10:8000`.
 
-- In splunk server go to apps and open 
+- In splunk server go to apps and click on **"Search & Reporting"** and on the search bar type `index="endpoint" jennyj` it will show all the logs and events.
+
+- On the left side of the log events menu click on the **"EventCode"** it will show all the events occur on the system.
+
+
+- On the EventCode interface it will show the event there you can see `4625` search this event code on web browser it will show you `An Accounts failed to logon on` (you can search all the event code on the browser).
+
+- When you click on the `4625` you can see logged event and if multiple times any account is logged on on a same time or within 2-3 seconds that's that it's an attack.
+
+- On the event code you can see `4624` you can search this event code on browser it will show you `An Account was successfully logged on`.
+
+- Now you can open any log event and scrool down and you can see the on which `workstation ` the account was logged on with the `IP address` (In my case it will i was attacking with Kali Linux so it shows `Kali` with my station's IP address - `192.168.10.250`.
+
+
+https://github.com/user-attachments/assets/37c1ef54-11bb-4b35-be7e-8e9de5cc9e5b
+
+
+---
