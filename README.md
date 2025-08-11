@@ -1,5 +1,6 @@
 # 📌Active Directory Project Home Lab
 
+I have made this project as a hands-on Active Directory (AD) Home Lab to learn about IT infrastructure, cybersecurity, and network management in a practical way. By setting up a small-scale enterprise environment at home using virtual machines, I gained experience in managing users and groups with Active Directory, monitoring logs with Splunk, and understanding how different cyber attacks are carried out and detected. The lab includes a Windows Server as a Domain Controller, a Windows 10 workstation, an Ubuntu server running Splunk, and a Kali Linux machine to simulate attacks—all within a safe, controlled setting.
 
 ## 🖥️ Machines
 
