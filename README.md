@@ -4,7 +4,7 @@ I have made this project as a hands-on Active Directory (AD) Home Lab to learn a
 
 ---
 
-## 🎯 Project Goals
+## 🎯 Project Goal
 
 To gained experience in managing users and groups with Active Directory, monitoring logs with Splunk, and understanding how different cyber attacks are carried out and detected.
 
@@ -28,7 +28,7 @@ To gained experience in managing users and groups with Active Directory, monitor
 
 ---
 
-## 🎯 Objectives of the projects 
+## 🎯 Objectives of the project 
 
 - User/group management via AD
 - Log collection & monitoring with Splunk
