@@ -162,7 +162,7 @@ https://github.com/user-attachments/assets/37c1ef54-11bb-4b35-be7e-8e9de5cc9e5b
 
 - Always use isolated networks for labs.
 - Never attack real/live systems without permission.
-- Regularly snapshot your VMs for easy rollback.
+- MAke it 
 
 ---
 
