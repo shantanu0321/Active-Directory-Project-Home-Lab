@@ -3,7 +3,7 @@
 
 ## 1. Downloading Ubuntu Server
 
--
+- Open google chrome and search " **Ubuntu** " and click on official website:  https://ubuntu.com/
 
 - Click on the "**Products**" and click on "**Ubuntu Server**".
   
