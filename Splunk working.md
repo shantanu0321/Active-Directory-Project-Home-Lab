@@ -5,7 +5,7 @@
 - Ubuntu system (with Splunk installed)
 - Windows 10 virtual machine
 - Both machines should be on the same network (like 192.168.10.x)
-- Make sure you have basic network access between the VMs
+- 
 
 ---
 
