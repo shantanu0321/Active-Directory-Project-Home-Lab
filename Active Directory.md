@@ -13,7 +13,7 @@ This guide walks you through setting up Active Directory on a Windows Server vir
   - **Windows 10** (target machine to join the domain)
 - Both VMs must be on the same virtual network.
 - Administrative privileges on both VMs.
-- qfqqf
+- Note the IP address of your Windows Server VM.
 
 
 ---
