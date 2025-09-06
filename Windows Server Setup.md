@@ -4,7 +4,7 @@
 
 - Search `Windows server iso download` on google and click on 1st microsoft official website https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022 .
   
-- 
+- Download the suitable ISO file compatible for your computer.
   
 https://github.com/user-attachments/assets/6155bab4-570b-4fa6-a4fc-2ce3a4a2259a
 
