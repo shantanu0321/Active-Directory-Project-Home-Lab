@@ -178,7 +178,7 @@ source = XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
 
 ```
 
-- 
+- Save this note pad in the the " Localdisk:C/Program File/Splunk Universal Forwarder/etc/system/local " and save it as inputs.conf in all file format, you can watch it in the below video
 
 https://github.com/user-attachments/assets/1e4bc0c4-bf75-47e9-8fe0-b4be1c8b30f3
 
