@@ -24,6 +24,8 @@
 
 - Write the name of machine and add the location where you want to save the file and select the ISO file and check the box of "**Skip  Unattended Installation**" and click next.
 
+<img width="758" height="595" alt="1 1" src="https://github.com/user-attachments/assets/72e6e738-51fc-4ba9-88a9-b2ec750db1cc" />
+
 - Make "**Hardware**" setting according to your PC specifications and then go to "**Hard Disk**" settings.
 
 <img width="842" height="612" alt="hardware settings" src="https://github.com/user-attachments/assets/e8ba98c6-0429-4374-ba23-41807857d300" />
