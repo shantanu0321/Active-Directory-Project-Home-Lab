@@ -35,3 +35,5 @@ To gained experience in managing users and groups with Active Directory, monitor
 - Detection of attacks (e.g.brute force)
 
 ---
+
+# If this project impressed you, consider starring the repository ⭐
