@@ -1,4 +1,4 @@
-# Windows 10 Installation (Target Machine)
+# Windows 10 Installation (Target Machine) 
 
 ## 1. Download Windows 10 from official website
 
