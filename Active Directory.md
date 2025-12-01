@@ -118,10 +118,10 @@ https://github.com/user-attachments/assets/8b3abfee-7c74-4dc1-8cf6-433c79dd3e67
 
 ## Summary Checklist
 
-- [ ] Windows Server VM is running AD DS and promoted to domain controller.
-- [ ] Windows 10 VM is configured to use the server’s IP as DNS.
-- [ ] Windows 10 VM joined to the domain.
-- [ ] Can log in to Windows 10 as an Active Directory user.
+- Windows Server VM is running AD DS and promoted to domain controller.
+- Windows 10 VM is configured to use the server’s IP as DNS.
+- Windows 10 VM joined to the domain.
+- Can log in to Windows 10 as an Active Directory user.
 
 ---
 
