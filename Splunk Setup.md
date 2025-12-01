@@ -57,5 +57,6 @@ https://github.com/user-attachments/assets/0bb4e6ce-e532-4bb2-81ba-f76b14e86983
 
 ---
 
+> Note:- After this you can install Sysmon and Splunk forwader on the Windows 10 domain client
 
 *Hope this helps! Let me know if you get stuck or if I missed something obvious—sometimes it’s just a small thing.*
