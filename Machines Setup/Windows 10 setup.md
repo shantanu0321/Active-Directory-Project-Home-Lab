@@ -100,7 +100,7 @@ https://github.com/user-attachments/assets/12bb66a9-a96c-4634-bab9-4534e789d7b4
 
 ---
 
- ## 7. Splunk Forwader Download 
+ ## 7. Splunk Forwarder Download 
 
  - Open web browser and search **Splunk** and click on official website: https://www.splunk.com/
  
