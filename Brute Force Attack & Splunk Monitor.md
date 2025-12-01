@@ -3,7 +3,7 @@
 ## 1. Preparing a Password List for Brute Forcing
 
 1. Open Terminal in Kali and go to the Desktop:
-    ```bash
+    ```bash 
     cd ~/Desktop
     ```
 2. Create a project directory:
