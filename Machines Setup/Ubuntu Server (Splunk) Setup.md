@@ -34,7 +34,7 @@ https://github.com/user-attachments/assets/d6fa3c6f-d908-433f-81ba-a502872d8422
 - While installation use Arrow keys for the setup.
   
 - Watch the video for better understanding.
-  
+   
 - After the installation run command `sudo apt-get update && sudo apt-get upgradxe`to update the server.
   
 https://github.com/user-attachments/assets/146dd4f4-6ca4-42d2-89bc-59b9ff70e9b0
